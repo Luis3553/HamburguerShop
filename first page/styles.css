@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 2px gray ;
+    height: 15vh;
+}
+
+header img {
+    height: 90px;
+}
+
+header h1 {
+    padding: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+/* FIN DE HEADER*/
+section {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* LEFT SECTION */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+
+.btn a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 3px solid white;
+    border-radius: 7px;
+}
+
+.btn a:hover {
+    color: rgba(255, 255, 255, 0.952);
+    background-color: rgba(183, 119, 2, 0.3);
+    box-shadow: 0px 0px 5px rgba(162, 162, 162, 0.5);
+}
+
+/* RIGTH SECTION*/
+.hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburguer img {
+    max-width: 50%;
+    padding-top: 2%;
+    
+}
+
+.hamburguer h3 {
+    padding: 5% 10%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: wheat;
+    height: 10vh;
+    padding: 0% 35%;
+    border-top: 2px solid gray;
+}
+
+footer img {
+    cursor: pointer;
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 540px) {
+    section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .hamburguer h3 {
+        font-size: 1.1rem;
+    }
+
+    .btn, .hamburguer {
+        width: 100%;
+    }
+
+    header img {
+        height: 80px;
+    }
+
+}
